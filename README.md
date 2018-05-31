@@ -1,1 +1,1 @@
-# Area to develop Falsk ideas
+# Area to develop Flask code
