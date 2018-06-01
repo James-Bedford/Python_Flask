@@ -5,11 +5,16 @@ app = Flask(__name__)
 @app.route("/start")
 def start():
     return "Sysops Start"
-@app.route('/dynamic')
+@app.route('/dynamic/<dq>')
 
-def dynamic():
-    return 'Dynamic Sysops'
+def dynamic(dq):
+    return "Dynamic Sysops"
 
 if __name__ == '__main__':
     app.run()
+
+@app.route('/integer/<int:value>')
+def int_type(value):
+    print(value+1)
+    return 'Correct'
 
