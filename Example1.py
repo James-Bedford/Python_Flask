@@ -13,7 +13,7 @@ def dynamic(dq):
 if __name__ == '__main__':
     app.run()
 
-@app.route('/integer/<int:value>')
+@app.route('/it/<int:value>')
 def int_type(value):
     print(value+1)
     return 'Correct'
